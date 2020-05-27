@@ -16,6 +16,7 @@ namespace HelloMVC.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+            ViewBag.ls_message = "This is my first Web App in C#";
 
             return View();
         }
