@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Add Customer";
+}
+
+<h2>Add Customer</h2>
+<form action="ViewCustomer">
+    <p>
+        Name:<input type="text" name="Name" />
+    </p>
+    <p>
+        Phone:<input type="tel" title="Invalid Phone Number!" name="Phone" class="k-textbox" placeholder="(123) 456-7890" pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}" required/>
+    </p>
+    <input type="submit" value="Add Customer" />
+</form>

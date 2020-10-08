@@ -6831,4 +6831,21 @@ button.close {
     display: none !important;
   }
 }
+
+
+/*!
+ * Added SisMod Apps
+ * Copyright 2011-2019 Twitter, Inc.
+ * Date         Name            CO
+ * 07/05/2020   Angel Mendoza   Initial
+ */
+
+
+input:valid {
+    color: green;
+}
+
+input:invalid {
+    color: red;
+}
 /*# sourceMappingURL=bootstrap.css.map */

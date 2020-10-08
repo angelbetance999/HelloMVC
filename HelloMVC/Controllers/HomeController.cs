@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +26,22 @@ namespace HelloMVC.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult ViewCustomer(Customer postedCustomer)
+        {
+            Customer customer = new Customer();
+
+            customer.Id = Guid.NewGuid().ToString();
+            customer.Name = postedCustomer.Name;
+            customer.Phone = postedCustomer.Phone;
+
+            return View(customer);
+        }
+
+        public ActionResult AddCustomer()
+        {
             return View();
         }
     }
