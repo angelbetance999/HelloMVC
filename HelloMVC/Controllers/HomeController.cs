@@ -18,6 +18,7 @@ namespace HelloMVC.Controllers
         {
             ViewBag.Message = "Your application description page.";
             ViewBag.ls_message = "This is my first Web App in C#";
+            ViewBag.ls_message2 = "Second change to Controller and View.";
 
             return View();
         }
