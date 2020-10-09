@@ -41,9 +41,18 @@ namespace HelloMVC.Controllers
             return View(customer);
         }
 
-        public ActionResult AddCustomer()
+        public ActionResult AddCustomer() 
         {
             return View();
+        }
+
+        public ActionResult CustomerList() 
+        {
+            List<Customer> customers = new List<Customer>();
+            customers.Add(new Customer() { Name = "Angel Mendoza - Movil", Phone = "(915) 603-2052" });
+            customers.Add(new Customer() { Name = "Angel Mendoza - Work",  Phone = "(915) 600-1116" });
+
+            return View(customers);
         }
     }
 }
